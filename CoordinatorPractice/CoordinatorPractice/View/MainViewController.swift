@@ -14,8 +14,21 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+        setupLayoutConstraints()
         view.backgroundColor = .systemRed
         
+    }
+    
+    func setupUI() {
+        let pushButton = UIButton()
+        pushButton.setTitle("화면 전환하기", for: .normal)
+        self.pushButton = pushButton
+        view.addSubview(pushButton)
+    }
+    
+    func setupLayoutConstraints() {
+        self.pushButton.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
     }
     
 
