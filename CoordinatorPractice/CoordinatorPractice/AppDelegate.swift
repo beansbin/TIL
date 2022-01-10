@@ -10,10 +10,20 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    var mainCoodinator: Coodinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let navigationController = UINavigationController()
+        mainCoodinator = MainCoordinator(navigationController: navigationController) // MainCoodinator 객체 생성
+        mainCoodinator?.start() // NVC에 MainVC를 push
+        
+        window = UIWindow(frame: UIScreen.main.bundle)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        
+        
         return true
     }
 
