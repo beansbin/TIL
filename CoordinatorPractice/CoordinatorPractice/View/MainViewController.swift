@@ -12,6 +12,8 @@ class MainViewController: UIViewController {
     weak var coordinator: MainCoordinator?
     weak var pushButton: UIButton!
     
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
