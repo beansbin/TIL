@@ -19,6 +19,7 @@ class MainViewController: UIViewController {
         setupUI()
         setupLayoutConstraints()
         view.backgroundColor = .systemRed
+        pushButton.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
         
     }
     
@@ -31,6 +32,10 @@ class MainViewController: UIViewController {
     
     func setupLayoutConstraints() {
         self.pushButton.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+    }
+    
+    @objc func tapButton() {
+        self.coordinator?.goToSecondVC()
     }
     
 

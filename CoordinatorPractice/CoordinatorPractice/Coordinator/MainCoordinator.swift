@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-class MainCoordinator: Coodinator {
-    var childCoordinator: [Coodinator] = []
+class MainCoordinator: Coordinator {
+    var childCoordinator: [Coordinator] = []
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -21,4 +21,12 @@ class MainCoordinator: Coodinator {
         mainViewController.coordinator = self
         navigationController.pushViewController(mainViewController, animated: true)
     }
+    
+    func goToSecondVC() {
+        let secondViewController = SecondViewController()
+        secondViewController.coordinator = self
+        navigationController.pushViewController(secondViewController, animated: true)
+        
+    }
 }
+
