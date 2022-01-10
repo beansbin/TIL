@@ -13,6 +13,8 @@
 		15B894AE278C52690059E74E /* Coodrinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B894AD278C52690059E74E /* Coodrinator.swift */; };
 		15B894B0278C542A0059E74E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B894AF278C54290059E74E /* MainCoordinator.swift */; };
 		15B894B5278C566E0059E74E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B894B4278C566E0059E74E /* MainViewController.swift */; };
+		15B894B8278C5CDB0059E74E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 15B894B7278C5CDB0059E74E /* RxCocoa */; };
+		15B894BA278C5CDB0059E74E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 15B894B9278C5CDB0059E74E /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B894BA278C5CDB0059E74E /* RxSwift in Frameworks */,
+				15B894B8278C5CDB0059E74E /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +119,10 @@
 			dependencies = (
 			);
 			name = CoordinatorPractice;
+			packageProductDependencies = (
+				15B894B7278C5CDB0059E74E /* RxCocoa */,
+				15B894B9278C5CDB0059E74E /* RxSwift */,
+			);
 			productName = CoordinatorPractice;
 			productReference = 15B89493278C51E40059E74E /* CoordinatorPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +151,9 @@
 				Base,
 			);
 			mainGroup = 15B8948A278C51E40059E74E;
+			packageReferences = (
+				15B894B6278C5CDB0059E74E /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 15B89494278C51E40059E74E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -296,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -382,6 +393,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		15B894B6278C5CDB0059E74E /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15B894B7278C5CDB0059E74E /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15B894B6278C5CDB0059E74E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		15B894B9278C5CDB0059E74E /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15B894B6278C5CDB0059E74E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15B8948B278C51E40059E74E /* Project object */;
 }

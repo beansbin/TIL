@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class MainViewController: UIViewController {
     weak var coordinator: MainCoordinator?
