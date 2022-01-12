@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var basicView: UIView!
+    var greenView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,11 @@ class ViewController: UIViewController {
         basicView.backgroundColor = .systemRed
         
         self.view.addSubview(basicView) // 현재 뷰에 해당 뷰를 add 해주는 작업
+        
+        greenView = UIView()
+        greenView.backgroundColor = .systemGreen
+        
+        self.view.addSubview(greenView) // 현재 뷰에 해당 뷰를 add 해주는 작업
         
         setAutoLayouts()
         
@@ -33,6 +39,12 @@ class ViewController: UIViewController {
             .isActive = true // 너비를 200으로 고정
         basicView.widthAnchor.constraint(equalToConstant: 200)
             .isActive = true // 높이를 200으로 고정
+        
+        greenView.translatesAutoresizingMaskIntoConstraints = false
+        greenView.leadingAnchor.constraint(equalTo: basicView.trailingAnchor, constant: 3).isActive = true // greenView.leadingAnchor = basicView.trailngAnchor + 3
+        greenView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -3).isActive = true 
+        greenView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -350).isActive = true
+        greenView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 350).isActive = true
     }
 
 
