@@ -26,7 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         return true
     }
-d
 
     // MARK: UISceneSession Lifecycle
 
