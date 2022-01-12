@@ -5,4 +5,5 @@
 |:--------|:--------:|
 |<center>**[Coordinator](https://beansbin.oopy.io/1de53ecd-4bca-41cb-90b2-8411530ddc3a)**</center> | <center> 화면 전환 코드를 분리하기 위한 Coordinator 패턴 알아보기 </center> |
 |<center>**[AutoLayoutProgrammatically](https://beansbin.oopy.io/dbd213e5-1422-4ffd-98e5-a14facba58d9)**</center> | <center> 코드베이스 프로젝트를 위한 오토레이아웃 작성하기! </center> |
+|<center>**[SnapKitPractice](https://beansbin.oopy.io/80d79a46-30cd-4aa7-bc12-a71618dfaf0b)**</center> | <center> 오토레이아웃 코드를 간결하게 만들어주는 SnapKit 라이브러리 사용해보기 </center> |
 
