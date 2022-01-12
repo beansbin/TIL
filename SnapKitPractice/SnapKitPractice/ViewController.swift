@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         
         let box = UIView()
+        box.backgroundColor = .systemGreen
         view.addSubview(box)
 
         box.snp.makeConstraints { (make) -> Void in
