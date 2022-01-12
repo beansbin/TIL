@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // version < 13 : SceneDelegate에서 해주었던 작업을 그대로 진행
-        window = UIWindow()
+        window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = ViewController() // 초기 ViewController
         window?.makeKeyAndVisible()
         
