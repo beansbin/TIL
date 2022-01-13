@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DropDown
 
 class ViewController: UIViewController {
     
@@ -21,12 +22,23 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
         navigationItem.title = "zedd"
-        print("나오긴 하니?")
         view.addSubview(button)
-        
         button.addTarget(self, action: #selector(toGoNext(_:)), for: .touchUpInside)
-        
         setAutoLayouts()
+        
+        
+        let dropDown = DropDown()
+        
+        // The view to which the drop down will appear on
+        dropDown.anchorView = view // UIView or UIBarButtonItem
+
+        // The list of items to display. Can be changed dynamically
+        dropDown.dataSource = ["Car", "Motorcycle", "Truck", "Car", "Motorcycle", "Truck", "Car", "Motorcycle", "Truck", "Car", "Motorcycle", "Truck", "Car", "Motorcycle", "Truck", "Car", "Motorcycle", "Truck", "Car", "Motorcycle", "Truck", "Car", "Motorcycle", "Truck", "Car", "Motorcycle", "Truck"]
+        dropDown.direction = .bottom
+        dropDown.offsetFromWindowBottom = 500
+        
+        navigationItem.titleView = dropDown
+        dropDown.show()
     }
     
     func setAutoLayouts() {
@@ -43,7 +55,6 @@ class ViewController: UIViewController {
     }
     
     @objc func toGoNext(_ sender: UIButton) {
-        print("부들부들")
         self.navigationController?.pushViewController(SecondViewController(), animated: true)
     }
     
