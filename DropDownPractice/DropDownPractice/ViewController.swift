@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
-        navigationController?.title = "Gg"
+        navigationItem.title = "zedd"
         print("나오긴 하니?")
         view.addSubview(button)
         

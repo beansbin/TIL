@@ -14,6 +14,7 @@
 		15D49CFC27901E280030DBE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D49CFB27901E280030DBE5 /* Assets.xcassets */; };
 		15D49CFF27901E280030DBE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D49CFD27901E280030DBE5 /* LaunchScreen.storyboard */; };
 		15D49D07279024F20030DBE5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D49D06279024F20030DBE5 /* SecondViewController.swift */; };
+		91D19A691D5C388EED310F9C /* Pods_DropDownPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC380A82CD597060F474718C /* Pods_DropDownPractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		15D49CFE27901E280030DBE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15D49D0027901E280030DBE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15D49D06279024F20030DBE5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		21D5FC8BC950D39F49D3615F /* Pods-DropDownPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropDownPractice.debug.xcconfig"; path = "Target Support Files/Pods-DropDownPractice/Pods-DropDownPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		786A5BDDFC200731F4291B3F /* Pods-DropDownPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropDownPractice.release.xcconfig"; path = "Target Support Files/Pods-DropDownPractice/Pods-DropDownPractice.release.xcconfig"; sourceTree = "<group>"; };
+		CC380A82CD597060F474718C /* Pods_DropDownPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropDownPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D19A691D5C388EED310F9C /* Pods_DropDownPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				15D49CF127901E260030DBE5 /* DropDownPractice */,
 				15D49CF027901E260030DBE5 /* Products */,
+				49F75B1685D7DEFF4EEB2C76 /* Pods */,
+				E6D0952ABEFD56ABE5A1BEA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = DropDownPractice;
 			sourceTree = "<group>";
 		};
+		49F75B1685D7DEFF4EEB2C76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21D5FC8BC950D39F49D3615F /* Pods-DropDownPractice.debug.xcconfig */,
+				786A5BDDFC200731F4291B3F /* Pods-DropDownPractice.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E6D0952ABEFD56ABE5A1BEA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC380A82CD597060F474718C /* Pods_DropDownPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15D49D0327901E280030DBE5 /* Build configuration list for PBXNativeTarget "DropDownPractice" */;
 			buildPhases = (
+				69DAC1099683E82515631D5B /* [CP] Check Pods Manifest.lock */,
 				15D49CEB27901E260030DBE5 /* Sources */,
 				15D49CEC27901E260030DBE5 /* Frameworks */,
 				15D49CED27901E260030DBE5 /* Resources */,
+				0D6E77C324E4E11DEC560C0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D6E77C324E4E11DEC560C0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DropDownPractice/Pods-DropDownPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DropDownPractice/Pods-DropDownPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DropDownPractice/Pods-DropDownPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69DAC1099683E82515631D5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DropDownPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15D49CEB27901E260030DBE5 /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		15D49D0427901E280030DBE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21D5FC8BC950D39F49D3615F /* Pods-DropDownPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +385,7 @@
 		};
 		15D49D0527901E280030DBE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 786A5BDDFC200731F4291B3F /* Pods-DropDownPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
