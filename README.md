@@ -1,5 +1,5 @@
-# HavitPractice_iOS
-도약앱잼을 위한 해빗 연습 라이브러리
+# TIL
+오늘 내가 공부한 것
 
 |  <center>내용</center> |  <center>설명</center> |  
 |:--------|:--------:|
