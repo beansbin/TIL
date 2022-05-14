@@ -138,3 +138,5 @@
 * `암달의 법칙` : 주변장치의 향상 없이 CPU의 속도만 늘리면 병목 현상으로 인해 컴퓨터의 성능이 비례해서 빨라지지 않는다는 원칙   
 
  &larr; Chapter1 [운영체제의 개요](https://github.com/beansbin/TIL/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Chapter_1_%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C_%EA%B0%9C%EC%9A%94.md)
+ 
+ &rarr; Chpater3 [프로세스와 스레드](https://github.com/beansbin/TIL/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Chapter_3_%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80_%EC%8A%A4%EB%A0%88%EB%93%9C.md)
